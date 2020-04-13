@@ -1,0 +1,19 @@
+<!doctype HTML>
+  <html>
+    <head>
+    <title>Copying Test</title>
+    </head>
+    <body>
+    <p id ="copy">Copies ¯\_(ツ)_/¯.</p>
+    <button onclick="copyFunction()">Copy</button>
+    </body>
+    <script>
+      function copyFunction() {
+      var copyText = document.getElementById("copy");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999)
+      document.execCommand("copy");
+      alert("Copied the text: ¯\_(ツ)_/¯");
+}
+</script>
+<html>
